@@ -1,0 +1,323 @@
+<Page
+	Cursor='/Styles.Cursors.default'
+	CursorSet='/Styles.Cursors.MoveCursorSet'
+	DragBadCursor='/Styles.Cursors.dragbad'
+	DragGoodCursor='/Styles.Cursors.draggood'
+	Name='root'
+	PackLocation='fixed,fixed'
+	PackSize='1,1'
+	palette='/styles.palette.alpha_blue'
+	PopupStyle='/Styles.popupmenu.default.style'
+	ScrollExtent='1024,768'
+	Size='1024,768'
+	TooltipStyle='/Styles.tooltip.default.style'
+	Version='45'
+	VisualEditLock='true'
+>
+	<Page
+		cameraLodBias='2'
+		Name='AvView'
+		OnShow='p.buttonCharacter.press=true'
+		PackSize='1,1'
+		ScrollExtent='1024,768'
+		Size='1024,768'
+		Visible='false'
+		VisualEditLock='true'
+	>
+		<CuiWidget3dObjectListViewer
+			BackgroundColor='#882222'
+			camerafitbone='true'
+			cameraLodBias='2'
+			cameraLodBiasOverride='true'
+			cameralookatbone='root'
+			CameraPitch='0.1'
+			camerayaw='3.3'
+			dragpitchok='true'
+			dragyawaok='true'
+			fieldofview='45'
+			fitrect='0,-5,100,95'
+			Location='500,14'
+			Name='sampleWearableBox'
+			PackSize='a,a'
+			ScrollExtent='162,336'
+			Size='162,336'
+		/>
+		<VolumePage
+			MinimumScrollExtent='1,2'
+			Name='wearableVolumePage'
+			ScrollExtent='128,128'
+			Size='128,128'
+		/>
+		<VolumePage
+			Location='0,260'
+			MinimumScrollExtent='1,2'
+			Name='currentVolumePage'
+			ScrollExtent='128,128'
+			Size='128,128'
+		/>
+		<Page
+			attributesbutton.enabled='true'
+			buttonAttributes.enabled='false'
+			buttonCharacter.press='true'
+			descriptionbutton.enabled='true'
+			Location='670,4'
+			MinimumSize='200,478'
+			Name='pageWearables'
+			PackLocation='fpf,npn'
+			PackSize='f,f'
+			RStyleDefault='rs_default'
+			ScrollExtent='350,716'
+			Size='350,716'
+			skillsbutton.enabled='true'
+		/>
+		<CuiWidget3dObjectListViewer
+			BackgroundColor='#882222'
+			camerafitbone='true'
+			cameraLodBias='2'
+			cameraLodBiasOverride='true'
+			cameralookatbone='root'
+			CameraPitch='0.1'
+			camerayaw='3.3'
+			dragpitchok='true'
+			dragyawaok='true'
+			fieldofview='45'
+			fitrect='0,-5,100,95'
+			Location='37,-9'
+			Name='viewerWidget'
+			PackSize='a,a'
+			ScrollExtent='582,766'
+			Size='582,766'
+		/>
+		<List
+			BackgroundColor='#000000'
+			BackgroundOpacity='0.00'
+			DataSource='/AvatarData.SpeciesSelection'
+			Location='5,289'
+			MinimumScrollExtent='304,213'
+			Name='hiddenAvatarList'
+			PackLocation='nfn,nfn'
+			PackSize='a,a'
+			ScrollExtent='304,216'
+			SelectionAllowedMultiRow='false'
+			Size='304,216'
+			Style='/Styles.list.dark.style'
+			Visible='false'
+		/>
+		<Data
+			buttonback='pageButtonsBottom.prev.buttonPrev'
+			buttonClothingNext='p.target.character.c.clothing.right'
+			buttonClothingPrev='p.target.character.c.clothing.left'
+			buttonFemale='p.target.character.c.gender.female.button.button'
+			buttonGenderNext='p.target.character.c1b.gender2.spinner.right'
+			buttonGenderPrev='p.target.character.c1b.gender2.spinner.left'
+			buttonGenderPrevious='p.target.character.c1b.gender2.spinner.left'
+			buttonMale='p.target.character.c.gender.male.button.button'
+			buttonnext='pageButtonsBottom.next.buttonNext'
+			buttonRandomAll='p.target.character.c1b.c.buttonRandomAll'
+			buttonRandomAppearance='p.target.character.c1b.c.buttonRandomAppearance'
+			buttonrandomname='p.target.character.c.randomName'
+			buttonSpeciesNext='p.target.character.c1b.species.spinner.right'
+			buttonSpeciesPrev='p.target.character.c1b.species.spinner.left'
+			checkNewbieTutorial='p.target.character.c.checkNewbieTutorial'
+			clothingSelection='p.target.character.c.clothing.labelSelection'
+			compositename='p.target.character.name'
+			genderSelection='p.target.character.c1b.gender2.labelSelection'
+			help='pagebuttonsbottom.help.text'
+			hiddenAvatarList='hiddenAvatarList'
+			Name='CodeData'
+			OneNameTemplates='wookiee_female
+wookiee_male'
+			p2speciesDescription='p.target.character.c.speciesDescription'
+			p2speciesName='p.target.character.c.speciesName'
+			pageCharacter='p.target.character'
+			parameterdatafolder='/avatardata.customization2'
+			scrollbarClothing='p.target.character.c1b.clothing.scrollbar'
+			scrollbarSpecies='p.target.character.c1b.species.scrollbar'
+			species1_female='p.target.character.c.species1_female'
+			species1_male='p.target.character.c.species1_male'
+			species2_female='p.target.character.c.species2_female'
+			species2_male='p.target.character.c.species2_male'
+			species_bothan_female='p.target.character.c.species1_female.bothan.button'
+			species_bothan_male='p.target.character.c.species1_male.bothan.button'
+			species_human_female='p.target.character.c.species1_female.human.button'
+			species_human_male='p.target.character.c.species1_male.human.button'
+			species_ithorian_female='p.target.character.c.species1_female.ithorian.button'
+			species_ithorian_male='p.target.character.c.species1_male.ithorian.button'
+			species_moncal_female='p.target.character.c.species1_female.moncal.button'
+			species_moncal_male='p.target.character.c.species1_male.moncal.button'
+			species_rodian_female='p.target.character.c.species1_female.rodian.button'
+			species_rodian_male='p.target.character.c.species1_male.rodian.button'
+			species_sullustan_female='p.target.character.c.species2_female.sullustan.button'
+			species_sullustan_male='p.target.character.c.species2_male.sullustan.button'
+			species_trandoshan_female='p.target.character.c.species2_female.trandoshan.button'
+			species_trandoshan_male='p.target.character.c.species2_male.trandoshan.button'
+			species_twilek_female='p.target.character.c.species2_female.twilek.button'
+			species_twilek_male='p.target.character.c.species2_male.twilek.button'
+			species_wookiee_female='p.target.character.c.species2_female.wookiee.button'
+			species_wookiee_male='p.target.character.c.species2_male.wookiee.button'
+			species_zabrak_female='p.target.character.c.species2_female.zabrak.button'
+			species_zabrak_male='p.target.character.c.species2_male.zabrak.button'
+			speciesSelection='p.target.character.c1b.species.labelSelection'
+			surnameVisible='p.target.character.c.p.surnameVisible'
+			textboxName='p.target.character.c.namebox.textboxname'
+			textboxsurname='p.target.character.c.p.surnameVisible.surnameBox.textboxsurname'
+			textFemale='p.target.character.c1b.gender.female.text'
+			textMale='p.target.character.c1b.gender.male.text'
+			viewer='viewer'
+		/>
+	</Page>
+	<include>ui_avatar_simple.inc</include>
+	<include>ui_textstylemanager.inc</include>
+	<Page
+		AbsorbsInput='false'
+		Name='Warnings'
+		PackSize='1,1'
+		ScrollExtent='1024,768'
+		Size='1024,768'
+		Visible='false'
+		VisualEditLock='true'
+	>
+		<Button
+			LocalText='x'
+			Location='1010,0'
+			Name='buttonClear'
+			OnHoverIn='opacity=1'
+			OnHoverOut='opacity=0'
+			OnPress='parent.text.localtext=\"\"'
+			Opacity='0.00'
+			OpacityRelativeMin='0.70'
+			PackLocation='fff,nfn'
+			RStyleDefault='/Styles.New.buttons.hud.style'
+			ScrollExtent='14,15'
+			Size='14,15'
+			Style='/Styles.New.buttons.hud.style'
+		>x</Button>
+		<Text
+			Font='fixed_12'
+			LocalText='WARNING: here is a warning.  Please fix it.  Thank you.
+WARNING: here is a warning.  Please fix it.  Thank you.
+WARNING: here is a warning.  Please fix it.  Thank you.
+WARNING: here is a warning.  Please fix it.  Thank you.
+WARNING: here is a warning.  Please fix it.  Thank you.
+WARNING: here is a warning.  Please fix it.  Thank you.
+WARNING: here is a warning.  Please fix it.  Thank you.
+WARNING: here is a warning.  Please fix it.  Thank you.
+WARNING: here is a warning.  Please fix it.  Thank you.
+WARNING: here is a warning.  Please fix it.  Thank you.
+WARNING: here is a warning.  Please fix it.  Thank you.
+WARNING: here is a warning.  Please fix it.  Thank you.
+WARNING: here is a warning.  Please fix it.  Thank you.
+WARNING: here is a warning.  Please fix it.  Thank you.
+WARNING: here is a warning.  Please fix it.  Thank you.
+WARNING: here is a warning.  Please fix it.  Thank you.
+WARNING: here is a warning.  Please fix it.  Thank you.
+WARNING: here is a warning.  Please fix it.  Thank you.
+WARNING: here is a warning.  Please fix it.  Thank you.
+WARNING: here is a warning.  Please fix it.  Thank you.
+WARNING: here is a warning.  Please fix it.  Thank you.
+WARNING: here is a warning.  Please fix it.  Thank you.
+WARNING: here is a warning.  Please fix it.  Thank you.
+WARNING: here is a warning.  Please fix it.  Thank you.
+WARNING: here is a warning.  Please fix it.  Thank you.
+WARNING: here is a warning.  Please fix it.  Thank you.
+WARNING: here is a warning.  Please fix it.  Thank you.
+WARNING: here is a warning.  Please fix it.  Thank you.
+WARNING: here is a warning.  Please fix it.  Thank you.
+WARNING: here is a warning.  Please fix it.  Thank you.
+WARNING: here is a warning.  Please fix it.  Thank you.
+'
+			Name='text'
+			PackSize='a,f'
+			PreLocalized='true'
+			ScrollExtent='1011,416'
+			Size='1011,97'
+		></Text>
+		<Scrollbar
+			Control='text'
+			Location='1014,17'
+			Name='scroll'
+			OnHoverIn='opacity=1.0'
+			OnHoverOut='opacity=0.0'
+			Opacity='0.00'
+			OpacityRelativeMin='1.00'
+			PackLocation='fff'
+			PackSize='f,p'
+			ScrollExtent='10,213'
+			Size='10,213'
+			Style='/Styles.scrollbar.default.vHud4.style'
+		>
+		</Scrollbar>
+	</Page>
+	<include>ui_debuginfo.inc</include>
+	<include>ui_console.inc</include>
+	<include>ui_e3_prefabs.inc</include>
+	<include>ui_resource.inc</include>
+	<include>ui_confirm.inc</include>
+	<include>ui_game_menu.inc</include>
+	<include>ui_options.inc</include>
+	<include>ui_menu_locations.inc</include>
+	<include>ui_controls_menu.inc</include>
+	<include>ui_transition.inc</include>
+	<include>ui_avatar_setup_prof.inc</include>
+	<include>ui_avatar_summary.inc</include>
+	<include>ui_avatar_location2.inc</include>
+	<include>ui_avatar_selection.inc</include>
+	<include>ui_avatar_creation.inc</include>
+	<include>ui_avatar_customize.inc</include>
+	<include>ui_splash_screen.inc</include>
+	<include>ui_conversation.inc</include>
+	<include>ui_scripted.inc</include>
+	<include>ui_messagebox.inc</include>
+	<include>ui_backdrop_default.inc</include>
+	<include>ui_start.inc</include>
+	<include>ui_grid_style.inc</include>
+	<include>ui_effectors.inc</include>
+	<ListboxStyle
+		GridStyle='/DefaultGrid.style'
+		Name='DefaultListboxStyle'
+	/>
+	<include>ui_avatardata.inc</include>
+	<Namespace
+		Name='ShipData'
+	>
+		<DataSource
+			Name='TheData'
+		>
+			<Data
+				cameraoffsetmaxz='1'
+				cameraoffsetz='2.5'
+				description='desc_xwing'
+				displayname='name_xwing'
+				Name='xwing'
+				objecttemplate='xwing'
+			/>
+			<Data
+				cameraoffsetmaxy='0.25'
+				cameraoffsetmaxz='1'
+				cameraoffsety='-0.25'
+				cameraoffsetz='2'
+				description='desc_bwing'
+				displayname='name_bwing'
+				Name='bwing'
+				objecttemplate='bwing'
+			/>
+			<Data
+				cameraoffsetmaxz='1.5'
+				cameraoffsetz='2'
+				description='desc_tiefighter'
+				displayname='name_tiefighter'
+				Name='tiefigher'
+				objecttemplate='tiefighter'
+			/>
+			<Data
+				cameraoffsetmaxz='1.5'
+				cameraoffsetz='2'
+				description='desc_tieinterceptor'
+				displayname='name_tieinterceptor'
+				Name='tieinterceptor'
+				objecttemplate='tieinterceptor'
+			/>
+		</DataSource>
+	</Namespace>
+	<include>ui_styles.inc</include>
+</Page>
